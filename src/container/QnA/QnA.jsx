@@ -27,7 +27,6 @@ const QnA = () => {
         })}
       </div>
       <br />
-      
     </section>
   );
 };
