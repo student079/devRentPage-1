@@ -7,23 +7,23 @@ const QnAPage = () => {
     const data = useQnADetail()
     const qnas = data.map(element => <QnA question={element.question} answer={element.answer}/>)
   return (
-    <main class="bg-black text-white text-center">
+    <main>
       <Layout>
-        <h1 class="text-6xl  ">FAQ</h1>
-        <p>자주 묻는 질문</p>
-        <br/>
-        {qnas}
-        <br/>
-        <h1 class="text-6xl" >문의하기</h1>
-        <p>메일</p>
-        <br/>
-        <p>인스타그램</p>
-        <br/>
+        <QnA/>
       </Layout>
     </main>
-  )
+  );
 }
 
 export default QnAPage
 
-export const Head = () => <title>devRent</title>
+export const Head = () => {
+  return (
+    <>
+      <title>devRent FAQ</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com"/>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
+      <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet"></link>
+    </>
+  );
+};

@@ -18,4 +18,15 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <title>Home Page</title>;
+export const Head = () => {
+  return (
+    <>
+      <title>devRent</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com"/>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
+      <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet"></link>
+    </>
+  );
+};
+
+<title>devRent</title>;
