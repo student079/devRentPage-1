@@ -1,5 +1,6 @@
 import * as React from "react";
 import Layout from "../components/Layout/layout";
+import Seo from "../components/seo";
 import Banner from "../container/home/banner";
 import Project from "../container/home/project";
 import Vision from "../container/home/vision";
@@ -18,4 +19,6 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <title>devRent</title>;
+export function Head() {
+  return <Seo />;
+}
