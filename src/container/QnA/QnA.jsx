@@ -27,21 +27,7 @@ const QnA = () => {
         })}
       </div>
       <br />
-      <div className="w-auto h-auto flex flex-col justify-start items-center mt-[50px] font-semibold">
-        <h1 class="text-5xl font-semibold">문의하기</h1>
-        <div className=" w-[1000px] mb-[100px]">
-          <p className="w-[200px] text-[30px] font-semibold mr-[20px] mt-[50px]">
-            Instagram
-          </p>
-          <br />
-          <div>
-            <a href="https://www.instagram.com/devrent_official/">
-              https://www.instagram.com/devrent_official/
-            </a>
-          </div>
-        </div>
-      </div>
-      <br />
+      
     </section>
   );
 };
