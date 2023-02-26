@@ -13,7 +13,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build && gp-pages -d public -b release"
+    "deploy": "gatsby build && gh-pages -d public -b release"
   },
   "dependencies": {
     "gatsby": "^5.7.0",
