@@ -4,7 +4,6 @@ import useBannerDetail from "../../hooks/Container/Home/Banner/hook";
 
 const Banner = () => {
   const { link, DataUrl } = useBannerDetail();
-  // console.log(DataUrl.allFile.edges);
   return (
     <section className="relative">
       <img
@@ -34,16 +33,6 @@ const Banner = () => {
           ⇩
         </button>
       </div>
-      {/* <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 text-center w-full">
-        <button
-          onClick={() => {
-            window.scrollTo({ top: window.innerHeight, behavior: "smooth" });
-          }}
-          className=" font-bold py-4 px-8 text-4xl mb-20"
-        >
-          ⇩
-        </button>
-      </div> */}
     </section>
   );
 };
