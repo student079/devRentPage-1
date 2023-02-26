@@ -1,7 +1,7 @@
 import * as React from "react";
 import useSeoDetail from "../hooks/components/seo/hook";
 
-const Seo = () => {
+const Seo = ({ children }) => {
   const { data } = useSeoDetail();
   return (
     <>
@@ -16,6 +16,7 @@ const Seo = () => {
         property="og:description"
         content={data.site.siteMetadata.description}
       />
+      {children}
     </>
   );
 };
