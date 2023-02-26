@@ -13,7 +13,7 @@ const Banner = () => {
         alt="BannerImg"
       />
       <div className="absolute xs:top-1/2 sm:top-1/2 top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-        <p className="xs:text-xl sm:text-xl md:text-4xl lg:text-5xl xl:text-6xl text-black font-bold mb-24">
+        <p className="xs:text-xl sm:text-xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold mb-24">
           WANNABE개발계의
           <br /> AOMG
         </p>
@@ -29,7 +29,7 @@ const Banner = () => {
           onClick={() => {
             window.scrollTo({ top: window.innerHeight, behavior: "smooth" });
           }}
-          className="absolute xs:hidden sm:hidden md:hidden lg:hidden xl:text-6xl left-1/2 -bottom-[400px] transform -translate-x-1/2 text-center font-bold py-4 px-8 mb-20"
+          className="absolute xs:hidden sm:hidden md:hidden lg:hidden xl:text-6xl left-1/2 -bottom-[400px] transform -translate-x-1/2 text-center font-bold py-4 px-8 mb-20 text-white"
         >
           ⇩
         </button>
