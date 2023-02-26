@@ -3,7 +3,7 @@ import * as React from "react";
 function useQnADetail() {
   const content = [
     {
-      question: "❓devRent 회비가 있나요?",
+      question: "devRent 회비가 있나요?",
       answer: [
         "🔑 회비는 12만원의 교육 보증금과 8만원의 활동비로 총 20만원입니다.",
         "🧾 12만원의 교육 보증금은 올바른 교육을 위해 사용되며, 8만원의 활동비는 장소 대관, 코드 리뷰, 멘토링 등을 위해 사용됩니다.",
@@ -11,7 +11,7 @@ function useQnADetail() {
       ],
     },
     {
-      question: "❓devRent 전체적인 과정이 어떻게 되나요?",
+      question: "devRent 전체적인 과정이 어떻게 되나요?",
       answer: [
         "📢 1년에 두 번, 3월과 9월에 모집해요.",
         "- 코딩테스트와 면접을 통해 선별해요.",
@@ -24,7 +24,7 @@ function useQnADetail() {
       ],
     },
     {
-      question: "❓devRent 클래스는 학기 중에만 하나요?",
+      question: "devRent 클래스는 학기 중에만 하나요?",
       answer: [
         "☀️현재 계획된 클래스는 학기 중에만 수행할 예정입니다.",
         "🌙방학 중에는 팀별로 프로젝트를 진행합니다.",
