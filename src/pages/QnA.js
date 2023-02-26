@@ -2,6 +2,7 @@ import * as React from "react"
 import Layout from "../components/Layout/layout"
 import QnA from "../container/QnA/QnA"
 import useQnADetail from "../hooks/container/QnA/hook"
+import Seo from "../components/seo";
 
 const QnAPage = () => {
     const data = useQnADetail()

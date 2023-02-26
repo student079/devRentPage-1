@@ -3,7 +3,8 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `devRentPage`,
+    title: `devRent`,
+    description: "WANNABE 개발계의 AOMG",
   },
   plugins: [
     {
@@ -13,6 +14,15 @@ module.exports = {
         name: `images`,
         // Path to the directory
         path: `${__dirname}/src/images/`,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'devRent',
+        short_name: 'devRent',
+        start_url: '/',
+        icon: 'src/images/devRent.svg',
       },
     },
     "gatsby-plugin-postcss",
