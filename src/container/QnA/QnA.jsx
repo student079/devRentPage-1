@@ -6,7 +6,7 @@ const QnA = () => {
   return (
     <section className="w-auto h-auto flex flex-col justify-start items-center mt-[100px]">
       <h1 class="text-6xl font-semibold">FAQ</h1>
-      <p className="w-auto h-auto flex-col justify-start items-center mt-[20px] mb-[50px] font-semibold">
+      <p className=" w-auto h-auto flex-col justify-start items-center mt-[20px] mb-[50px] font-semibold">
         자주 묻는 질문
       </p>
       <br />
