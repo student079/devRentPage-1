@@ -1,6 +1,7 @@
 import { graphql, Link, useStaticQuery } from "gatsby";
 import * as React from "react";
 import useBannerDetail from "../../hooks/Container/Home/Banner/hook";
+import { FaAngleDown } from "react-icons/fa";
 
 const Banner = () => {
   const { link, DataUrl } = useBannerDetail();
@@ -30,7 +31,7 @@ const Banner = () => {
           }}
           className="absolute xs:hidden sm:hidden md:hidden lg:hidden xl:text-6xl left-1/2 -bottom-[400px] transform -translate-x-1/2 text-center font-bold py-4 px-8 mb-20 text-white"
         >
-          ⇩
+          <FaAngleDown />
         </button>
       </div>
     </section>
