@@ -1,7 +1,12 @@
 import * as React from "react";
-import useHook from "../../hooks/hook";
+import Modal from 'react-modal';
+import useProjectsDetail from "../../hooks/Container/Home/projects/hook";
 
-function ProjectItem({ title, imgUrl, gen, link }) {
+function ProjectItem({ title, imgUrl, gen, link, closeBtnUrl }) {
+  const [modalIsOpen, setModal] = React.useState(false);
+  if (!imgUrl) {
+    imgUrl = "./static/images/404.jpg"
+  }
   return (
     <div className="w-full max-w-full px-3 mb-6 lg:w-1/3 sm:flex-none">
       <div
@@ -14,11 +19,34 @@ function ProjectItem({ title, imgUrl, gen, link }) {
               src={imgUrl}
               alt="프로젝트 이미지"
               className="max-w-full shadow-soft-2xl rounded-2xl"
+              onClick={() => setModal(true)}
             />
           </a>
+          <Modal
+          isOpen={modalIsOpen}
+          onRequestClose={() => {setModal(false)}}
+          appElement={document.getElementById('___gatsby')}
+          style={{
+            content: {display: "inline-block", width: "fit-content", height: "fit-content"}
+          }}
+          >
+            <img
+              src={imgUrl}
+              alt="프로젝트 이미지"
+              className="max-w-full shadow-soft-2xl rounded-2xl"
+              onClick={() => setModal(true)}
+              style={{maxHeight: "600px"}}
+            />
+            <img
+              src={closeBtnUrl}
+              alt="Close"
+              onClick={() => setModal(false)}
+              style={{top: "5px", right: "5px", width: "20px", height: "20px", position:"absolute"}}
+            />
+          </Modal>
         </div>
         <div className="flex-auto px-1 pt-6">
-          <p className="relative z-10 mb-2 leading-normal text-size-sm bg-clip-text">
+          <p className="z-10 mb-2 leading-normal text-size-sm bg-clip-text">
             devRent {gen}기
           </p>
           <a href={link} target="_blank" style={{fontSize: "1.25rem", lineHeight: "1.375", fontWeight: "600"}}>
@@ -41,30 +69,31 @@ function ProjectList({ children }) {
 }
 
 const Project = () => {
-  let [projects, _] = React.useState(useHook().projects);
+  const [projects, _] = React.useState(useProjectsDetail().projects);
   return (
     <>
-    <h3
-      className="mb-4"
-      style={{fontWeight: "700", color: "#344767"}}
-    >
-      Projects
-    </h3>
-    <ProjectList>
-      {
-        projects.data.map((p) => {
-          return (
-            <ProjectItem
-              key={p.index}
-              title={p.title}
-              imgUrl={p.imgUrl}
-              gen={p.gen}
-              link={p.link}
-            />
-          );
-        })
-      }
-    </ProjectList>
+      <h3
+        className="mb-4"
+        style={{fontWeight: "700", color: "#344767"}}
+      >
+        Projects
+      </h3>
+      <ProjectList>
+        {
+          projects.data.map((p) => {
+            return (
+              <ProjectItem
+                key={p.index}
+                title={p.title}
+                imgUrl={p.imgUrl}
+                gen={p.gen}
+                link={p.link}
+                closeBtnUrl={projects.icons.closeBtn}
+              />
+            );
+          })
+        }
+      </ProjectList>
     </>
   );
 };
