@@ -7,12 +7,12 @@ const QnAPage = () => {
     const data = useQnADetail()
     const qnas = data.map(element => <QnA question={element.question} answer={element.answer}/>)
   return (
-    <main class="bg-black text-white text-center">
+    <main>
       <Layout>
         <QnA/>
       </Layout>
     </main>
-  )
+  );
 }
 
 export default QnAPage
