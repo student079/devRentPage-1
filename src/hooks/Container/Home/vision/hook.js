@@ -19,8 +19,11 @@ function useVisionDetail() {
         "미니 프로젝트 + 최종 프로젝트까지 진행하며 혼자가 아니라 동기들, 멘토들과 꾸준함을 나눕니다."
       ]
     },
-  ]
-  return { data };
+  ];
+
+  // const qnaLink = "/QnA";
+
+  return { data } // qnaLink };
 }
 
 export default useVisionDetail;

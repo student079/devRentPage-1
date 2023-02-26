@@ -1,9 +1,11 @@
+import { Link } from "gatsby";
 import * as React from "react";
 import useVisionDetail from "../../hooks/container/home/vision/hook.js";
 
 const Vision = () => {
   const { data } = useVisionDetail();
   return (
+    <>
     <section className="w-auto h-auto flex flex-col justify-start items-center mt-[100px]">
       {data.map((data, index) => {
         return (
@@ -36,6 +38,17 @@ const Vision = () => {
         );
       })}
     </section>
+    <div className="mb-20 flex flex-col justify-cente items-center">
+      <button className=" bg-black sm:w-32 sm:h-12 md:w-40 md:h-16 lg:w-48 lg:h-16 xl:w-52 xl:h-20 font-bold px-8 rounded-full" style={{color: "white"}}>
+        <Link
+          className=" xs:text-[10px] sm:text-base md:text-xl lg:text-3xl xl:text-3xl "
+          to="/QnA"
+        >
+          FAQ
+        </Link>
+      </button>
+    </div>
+  </>
   );
 };
 
