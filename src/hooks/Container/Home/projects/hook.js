@@ -14,52 +14,52 @@ function useProjectsDetail() {
       },
       {
         index: 1,
-        title: "채스모스",
-        imgUrl: null,
-        gen: 1,
-        link: "http://15.164.163.193/"
-      },
-      {
-        index: 2,
         title: "Tastory",
         imgUrl: "./static/images/tastory.png",
         gen: 1,
         link: "https://tastory.pythonanywhere.com/"
       },
       {
-        index: 3,
+        index: 2,
         title: "Mr.Qr",
         imgUrl: "./static/images/mrqr.png",
         gen: 1,
         link: "http://oshmos.pythonanywhere.com/"
       },
       {
-        index: 4,
+        index: 3,
         title: "CAMPLUS",
         imgUrl: "./static/images/camplus.png",
         gen: 2,
         link: "http://camsplus.site"
       },
       {
-        index: 5,
+        index: 4,
         title: "깐부.GG",
         imgUrl: "./static/images/gganbugg.png",
         gen: 2,
         link: "https://wkdrhkdwls.github.io/doubleup/"
       },
       {
-        index: 6,
+        index: 5,
         title: "BLOGNAVI",
         imgUrl: "./static/images/blognavi.png",
         gen: 2,
         link: "http://blognavi.pythonanywhere.com/"
       },
       {
-        index: 7,
+        index: 6,
         title: "Rolling Paper",
         imgUrl: "./static/images/rollpaper.png",
         gen: 2,
         link: "http://ansoonho.pythonanywhere.com/"
+      },
+      {
+        index: 7,
+        title: "채스모스",
+        imgUrl: null,
+        gen: 1,
+        link: "http://15.164.163.193/"
       },
     ]
   };
