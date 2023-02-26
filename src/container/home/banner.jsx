@@ -13,7 +13,7 @@ const Banner = () => {
       <img
         className="bg-center  bg-cover w-full h-full align-middle  bg-no-repeat"
         src={DataUrl}
-        alt=''
+        alt=""
       />
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center overflow-auto">
         <span className="break-all mb-8 text-white text-6xl font-bold"></span>
