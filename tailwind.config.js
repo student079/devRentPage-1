@@ -11,7 +11,7 @@ module.exports = {
         lg: {"min": "1081px", 'max': "1440px"},
         xl: {"min": "1441px", 'max': "1920px"},
         xxl: {"min": "1921px"}
-      }
+      },
     },
   },
   plugins: [],
