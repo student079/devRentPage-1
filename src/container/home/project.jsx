@@ -2,6 +2,8 @@ import * as React from "react";
 import Modal from 'react-modal';
 import useProjectsDetail from "../../hooks/Container/Home/projects/hook";
 
+Modal.setAppElement('#___gatsby');
+
 function ProjectItem({ title, imgUrl, gen, link, closeBtnUrl }) {
   const [modalIsOpen, setModal] = React.useState(false);
   if (!imgUrl) {
@@ -25,7 +27,6 @@ function ProjectItem({ title, imgUrl, gen, link, closeBtnUrl }) {
           <Modal
           isOpen={modalIsOpen}
           onRequestClose={() => {setModal(false)}}
-          appElement={document.getElementById('___gatsby')}
           style={{
             content: {display: "inline-block", width: "fit-content", height: "fit-content"}
           }}

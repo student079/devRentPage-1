@@ -12,7 +12,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "deploy": "gatsby build && gp-pages -d public -b release"
   },
   "dependencies": {
     "gatsby": "^5.7.0",
@@ -20,10 +21,12 @@
     "gatsby-plugin-sharp": "^5.7.0",
     "gatsby-source-filesystem": "^5.7.0",
     "gatsby-transformer-sharp": "^5.7.0",
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
-    "react-modal": "^3.16.1"
+    "react-modal": "^3.16.1",
+    "save-dev": "^0.0.1-security"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
