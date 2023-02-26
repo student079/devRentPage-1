@@ -8,12 +8,13 @@ const Vision = () => {
       {data.map((data, index) => {
         return (
           <div
-            className=" w-[1000px] mb-[100px] flex flex-row justify-between"
+            className=" w-[1000px] h-auto mb-[50px] flex flex-row justify-between"
             key={index}
           >
             <span className=" w-[200px] text-[30px] font-semibold mr-[20px]">
               {data.visionTitle}
             </span>
+            <hr className=" w-[1px] h-auto bg-black" />
             <ul className=" w-[600px]">
               {data.visionAnswer.map((data, index2) => {
                 return (
