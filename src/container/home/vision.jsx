@@ -42,7 +42,7 @@ const Vision = () => {
       <button className=" bg-black sm:w-32 sm:h-12 md:w-40 md:h-16 lg:w-48 lg:h-16 xl:w-52 xl:h-20 font-bold px-8 rounded-full" style={{color: "white"}}>
         <Link
           className=" xs:text-[10px] sm:text-base md:text-xl lg:text-3xl xl:text-3xl "
-          to="./QnA"
+          to="https://devrentpage.github.io/devRentPage/QnA/"
         >
           FAQ
         </Link>
