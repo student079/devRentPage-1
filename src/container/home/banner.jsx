@@ -12,8 +12,8 @@ const Banner = () => {
         alt="BannerImg"
       />
       <div className="absolute xs:top-1/2 sm:top-1/2 top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-        <p className="xs:text-xl sm:text-xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold mb-24">
-          WANNABE개발계의
+        <p className="xs:text-xl sm:text-xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold mb-24" style={{lineHeight: "70px"}}>
+          WANNABE 개발계의
           <br /> AOMG
         </p>
         <button className=" bg-white  sm:w-32 md:w-40 md:h-14 lg:w-48 lg:h-16 xl:w-52 xl:h-20 font-bold  px-8 rounded-full">

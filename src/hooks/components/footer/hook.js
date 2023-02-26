@@ -5,7 +5,7 @@ function useFooterDetail() {
       url: "https://linktr.ee/devrent",
     },
     {
-      name: "INSTGRAM",
+      name: "INSTAGRAM",
       url: "https://instagram.com/devrent_official",
     }
   ]

@@ -72,12 +72,10 @@ const Project = () => {
   const [projects, _] = React.useState(useProjectsDetail().projects);
   return (
     <>
-      <h3
-        className="mb-4"
-        style={{fontWeight: "700", color: "#344767"}}
-      >
-        Projects
-      </h3>
+      <div className="mt-[50px] mb-[30px] text-center w-auto text-[40px] sm:text-[30px] font-semibold mr-[20px] sm:mr-0 md:mr-0">
+        프로젝트
+      </div>
+      <hr className=" w-[1px] h-auto bg-black" />
       <ProjectList>
         {
           projects.data.map((p) => {
